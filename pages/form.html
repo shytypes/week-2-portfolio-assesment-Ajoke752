@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/styles/form.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Contact Me form</h1>
+        <form>
+          <fieldset>
+            <legend>Enter your details</legend>
+
+            <label for="firstName"
+              >First Name:
+              <input type="text" id="firstName" name="firstName" required />
+            </label>
+
+            <label for="lastName"
+              >Last Name:
+              <input type="text" id="lastName" name="lastName" required />
+            </label>
+
+            <label for="email"
+              >Email:
+              <input type="email" id="email" name="email" required />
+            </label>
+
+            <label for="age"
+              >Age:
+              <input type="number" id="age" name="age" min="0" required />
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <section id="submit-section">
+        <button type="button">
+          <a href="index.html" id="back-link">back</a>
+        </button>
+        <button id="submit">Submit</button>
+      </section>
+      <section id="hidden-section" class="hidden">
+        <p id="success-tag">Form Submitted Successfully</p>
+        <p>
+          <a href="#" id="view-details"> Click here to view your details</a>
+        </p>
+      </section>
+      <section>
+        <ul id="result-view"></ul>
+      </section>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
