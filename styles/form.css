@@ -64,7 +64,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-a:hover {
+#view-details:hover {
   color: blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transform: scale(1.1);
