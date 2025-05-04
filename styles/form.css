@@ -78,6 +78,8 @@ a:hover {
 }
 #close-button {
   display: none;
+  margin-top: auto;
+  text-align: center;
 }
 
 h1 {
@@ -87,7 +89,6 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 #submit-section {
