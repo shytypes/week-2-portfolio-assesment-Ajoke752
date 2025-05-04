@@ -2,6 +2,8 @@ let submitButton = document.querySelector('#submit')
 
 let hiddenSection = document.querySelector('#hidden-section')
 let viewDetails = document.querySelector('#view-details')
+let closeButton = document.querySelector('#close-button')
+let form = document.querySelector('form')
 
 const showHiddenSection = (e) => {
   e.preventDefault()
@@ -10,6 +12,16 @@ const showHiddenSection = (e) => {
   hiddenSection.style.alignItems = 'center'
   hiddenSection.style.justifyContent = 'center'
   viewDetails.addEventListener('click', handleFormDetails)
+  closeButton.addEventListener('click', closeHiddenSection)
+}
+
+const closeHiddenSection = (e) => {
+  e.preventDefault()
+  hiddenSection.style.display = 'none'
+  form.reset()
+  let resultView = document.querySelector('#result-view')
+  resultView.innerHTML = ''
+  closeButton.style.display = 'none'
 }
 
 const handleFormDetails = (e) => {
@@ -31,5 +43,7 @@ const handleFormDetails = (e) => {
     console.log(`${property}: ${userData[property]}`)
     resultView.innerHTML += `<li><p>${property}: ${userData[property]}</p></li>`
   }
+  closeButton.style.display = 'flex'
+  closeButton.style.alignItems = 'center'
 }
 submitButton.addEventListener('click', showHiddenSection)

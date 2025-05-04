@@ -63,16 +63,21 @@ button:hover {
   background-color: #45a049;
   transform: scale(1.1);
 }
+
 a:hover {
-  color: white;
-  background-color: #45a049;
+  color: blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transform: scale(1.1);
+  border-bottom: 2px solid blue;
+  text-decoration: none;
 }
 #back-link {
   text-decoration: none;
   color: white;
   padding: 10px;
+}
+#close-button {
+  display: none;
 }
 
 h1 {
