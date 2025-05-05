@@ -33,6 +33,7 @@ const showHiddenSection = (e) => {
     hiddenSection.style.alignItems = 'center'
     viewDetails.style.display = 'flex'
     closeButton.style.display = 'flex'
+    successMessage.innerHTML = `<p>Form Submitted Successfully</p>`
     successMessage.style.display = 'flex'
     successMessage.style.color = 'green'
   } else {
